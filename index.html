@@ -1,578 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Ornery Informal Curlew</title>
-    <meta property="og:title" content="Ornery Informal Curlew" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-        <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Noto Sans;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-theme-neutral-dark);
-        background-color: var(--dl-color-theme-neutral-light);
-
-        fill: var(--dl-color-theme-neutral-dark);
-      }
-	.navbar4-container {
-  width: 100%;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--dl-color-theme-neutral-light);
-}
-.navbar4-navbar-interactive {
-  width: 100%;
-  display: flex;
-  max-width: var(--dl-size-size-maxwidth);
-  align-items: center;
-  padding-top: var(--dl-space-space-twounits);
-  padding-left: var(--dl-space-space-threeunits);
-  padding-right: var(--dl-space-space-threeunits);
-  padding-bottom: var(--dl-space-space-twounits);
-  justify-content: space-between;
-  background-color: #ffffff;
-}
-.navbar4-image1 {
-  width: 278px;
-  height: 96px;
-  display: flex;
-  align-items: center;
-  background-size: cover;
-  justify-content: center;
-  background-image: url('https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/fac575ac-7a41-484f-b7ac-875042de11f8?org_if_sml=1&force_format=original');
-  background-position: center;
-}
-.navbar4-navlink {
-  display: contents;
-}
-.navbar4-image {
-  width: 260px;
-  object-fit: cover;
-  text-decoration: none;
-}
-.navbar4-desktop-menu {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-}
-.navbar4-links {
-  gap: var(--dl-space-space-twounits);
-  flex: 1;
-  display: flex;
-  align-items: center;
-  margin-left: var(--dl-space-space-twounits);
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.navbar4-link1 {
-  font-size: 30px;
-  text-decoration: none;
-}
-.navbar4-link3 {
-  font-size: 30px;
-  text-decoration: none;
-}
-.navbar4-link4 {
-  font-size: 30px;
-  text-decoration: none;
-}
-.navbar4-buttons {
-  gap: var(--dl-space-space-twounits);
-  display: flex;
-  align-items: center;
-  margin-left: var(--dl-space-space-twounits);
-}
-.navbar4-action1 {
-  font-size: 30px;
-  text-decoration: none;
-}
-.navbar4-burger-menu {
-  display: none;
-}
-.navbar4-icon {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-}
-.navbar4-mobile-menu {
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100vh;
-  display: none;
-  padding: var(--dl-space-space-twounits);
-  z-index: 100;
-  position: absolute;
-  flex-direction: column;
-  background-color: var(--dl-color-theme-neutral-light);
-}
-.navbar4-nav {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.navbar4-top {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--dl-space-space-threeunits);
-  justify-content: space-between;
-}
-.navbar4-logo {
-  height: 3rem;
-}
-.navbar4-close-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.navbar4-icon2 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-}
-.navbar4-links1 {
-  gap: var(--dl-space-space-unit);
-  flex: 0 0 auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.navbar4-buttons1 {
-  gap: var(--dl-space-space-twounits);
-  display: flex;
-  margin-top: var(--dl-space-space-twounits);
-  align-items: center;
-}
-.navbar4-root-class-name {
-  background-color: #ffffff;
-}
-@media(max-width: 991px) {
-  .navbar4-desktop-menu {
-    display: none;
-  }
-  .navbar4-burger-menu {
-    display: flex;
-  }
-}
-@media(max-width: 767px) {
-  .navbar4-navbar-interactive {
-    padding-left: var(--dl-space-space-twounits);
-    padding-right: var(--dl-space-space-twounits);
-  }
-  .navbar4-burger-menu {
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media(max-width: 479px) {
-  .navbar4-navbar-interactive {
-    padding: var(--dl-space-space-unit);
-  }
-  .navbar4-mobile-menu {
-    padding: var(--dl-space-space-unit);
-  }
-}
-
-.hero3-header9 {
-  width: 100%;
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-}
-.hero3-placeholder-image {
-  width: 1198px;
-  height: 674px;
-  display: flex;
-  align-items: center;
-  background-size: cover;
-  justify-content: center;
-  background-image: url('https://play.teleporthq.io/static/svg/default-img.svg');
-  background-position: center;
-}
-.hero3-image {
-  width: 100%;
-  height: 688px;
-  object-fit: cover;
-}
-.hero3-content {
-  display: flex;
-  justify-content: center;
-}
-.hero3-max-width {
-  align-self: center;
-  align-items: center;
-}
-.hero3-column {
-  flex: 1;
-  width: auto;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: center;
-}
-.hero3-column1 {
-  gap: var(--dl-space-space-twounits);
-  flex: 1;
-  width: auto;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-  flex-direction: column;
-}
-.hero3-actions {
-  gap: var(--dl-space-space-unit);
-  display: flex;
-  align-items: flex-start;
-}
-.hero3-button {
-  text-decoration: none;
-}
-.hero3-button1 {
-  text-decoration: none;
-}
-@media(max-width: 991px) {
-  .hero3-column {
-    width: 100%;
-  }
-  .hero3-column1 {
-    width: auto;
-  }
-}
-@media(max-width: 767px) {
-  .hero3-text {
-    text-align: center;
-  }
-  .hero3-text1 {
-    text-align: center;
-  }
-  .hero3-actions {
-    width: 100%;
-    justify-content: center;
-  }
-}
-@media(max-width: 479px) {
-  .hero3-actions {
-    flex-direction: column;
-  }
-  .hero3-button {
-    width: 100%;
-  }
-  .hero3-button1 {
-    width: 100%;
-    padding-left: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-oneandhalfunits);
-  }
-}
-
-.gallery1-gallery3 {
-  gap: var(--dl-space-space-fiveunits);
-  width: 100%;
-  height: auto;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  align-items: center;
-  flex-shrink: 0;
-  flex-direction: column;
-}
-.gallery1-max-width {
-  gap: var(--dl-space-space-twounits);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.gallery1-section-title {
-  gap: var(--dl-space-space-oneandhalfunits);
-  width: auto;
-  display: flex;
-  max-width: 800px;
-  align-items: center;
-  flex-shrink: 0;
-  flex-direction: column;
-}
-.gallery1-text {
-  text-align: center;
-}
-.gallery1-text1 {
-  text-align: center;
-}
-.gallery1-content {
-  gap: var(--dl-space-space-twounits);
-  width: 100%;
-  display: flex;
-  align-self: stretch;
-  align-items: center;
-  flex-shrink: 0;
-  justify-content: center;
-}
-.gallery1-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.gallery1-image {
-  width: 100%;
-  height: 296px;
-  object-fit: cover;
-}
-.gallery1-container1 {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.gallery1-image1 {
-  width: 100%;
-  height: 304px;
-  object-fit: cover;
-}
-.gallery1-container2 {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.gallery1-image3 {
-  width: 325px;
-  height: 244px;
-  display: flex;
-  align-items: center;
-  background-size: cover;
-  justify-content: center;
-  background-image: url('https://images.unsplash.com/photo-1447789624106-34acdd381c18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNTc5MzIxM3w&ixlib=rb-4.0.3&q=80&w=1080');
-  background-position: center;
-}
-.gallery1-image2 {
-  width: 100%;
-  height: 308px;
-  object-fit: cover;
-}
-@media(max-width: 991px) {
-  .gallery1-content {
-    align-items: center;
-    flex-direction: column;
-  }
-}
-
-.home-container {
-  width: 100%;
-  display: flex;
-  overflow: auto;
-  min-height: 100vh;
-  align-items: center;
-  flex-direction: column;
-}
-.home-navbar1 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.home-hero2 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.home-logos3 {
-  flex: 0 0 auto;
-  width: 100%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.home-gallery4 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-    </style>
-  </head>
-  <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <div class="home-container">
-        <div class="home-navbar1">
-          <div class="navbar4-container navbar4-root-class-name">
-            <header data-thq="thq-navbar" class="navbar4-navbar-interactive">
-              <div class="navbar4-image1">
-                <a href="index.html" class="navbar4-navlink">
-                  <img
-                    alt="image"
-                    src="public/logo-200h.png"
-                    class="navbar4-image"
-                  />
-                </a>
-              </div>
-              <div data-thq="thq-navbar-nav" class="navbar4-desktop-menu">
-                <nav class="navbar4-links">
-                  <a
-                    href="index.html"
-                    class="navbar4-link1 thq-body-small thq-link"
-                  >
-                    <span>Acasa</span>
-                  </a>
-                  <a
-                    href="log-in.html"
-                    class="navbar4-link3 thq-body-small thq-link"
-                  >
-                    <span>Login</span>
-                  </a>
-                  <a
-                    href="despre-noi.html"
-                    class="navbar4-link4 thq-body-small thq-link"
-                  >
-                    <span>Despre Noi</span>
-                  </a>
-                </nav>
-                <div class="navbar4-buttons">
-                  <a
-                    href="sign-up.html"
-                    class="navbar4-action1 thq-button-filled"
-                  >
-                    <span>signup</span>
-                  </a>
-                </div>
-              </div>
-              <div data-thq="thq-mobile-menu" class="navbar4-mobile-menu">
-                <div class="navbar4-nav">
-                  <nav class="navbar4-links1">
-                    <span class="thq-body-small thq-link">
-                      <span>Acasa</span>
-                    </span>
-                    <span class="thq-body-small thq-link">
-                      <span>Login</span>
-                    </span>
-                    <span class="thq-body-small thq-link">
-                      <span>Despre Noi</span>
-                    </span>
-                  </nav>
-                </div>
-                <div class="navbar4-buttons1">
-                  <button class="thq-button-filled">Login</button>
-                  <button class="thq-button-outline">Register</button>
-                </div>
-              </div>
-            </header>
-          </div>
-        </div>
-        <div class="home-hero2">
-          <div class="hero3-header9">
-            <div class="hero3-placeholder-image thq-img-ratio-16-9">
-              <img
-                alt="image"
-                src="public/imagineai-1500w.jpg"
-                class="hero3-image"
-              />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RitmoSphere</title>
+    <link rel="stylesheet" href="./stylef.css">
+	    <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+                RitmoSphere
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Cauta utilizatori, postari sau hastaguri:">
             </div>
-            <div class="hero3-content thq-section-padding">
-              <div class="hero3-max-width thq-section-max-width thq-flex-row">
-                <div class="hero3-column">
-                  <h1 class="thq-heading-1 hero3-text">
-                    <span>Bun venit in RitmoSphere !</span>
-                  </h1>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg" alt="">
                 </div>
-                <div class="hero3-column1">
-                  <p class="thq-body-large hero3-text1">
-                    <span>
-                      Conecteaza-te cu iubitorii de muzica din jurul lumii!
-                    </span>
-                  </p>
-                  <div class="hero3-actions">
-                    <a
-                      href="log-in.html"
-                      class="hero3-button thq-button-filled"
-                    >
-                      <span class="thq-body-small"><span>Log in</span></span>
-                    </a>
-                    <a
-                      href="sign-up.html"
-                      class="hero3-button1 thq-button-outline"
-                    >
-                      <span class="thq-body-small"><span>Sign up</span></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="home-logos3"></div>
-        <div class="home-gallery4">
-          <div class="gallery1-gallery3 thq-section-padding">
-            <div class="gallery1-max-width thq-section-max-width">
-              <div class="gallery1-section-title">
-                <h2 class="gallery1-text thq-heading-2">
-                  <span>
-                    Gaseste persoane cu acelasi gusturi muzicale ca si tine!
-                  </span>
-                </h2>
-                <span class="gallery1-text1 thq-body-large">
-                  <span>
-                    Raspunde un quiz scurt despre ce muzica asculti si ce muzica
-                    iti displace si fi pregatit sa iti faci prieteni nenumarati.
-                  </span>
-                </span>
-              </div>
-              <div class="gallery1-content">
-                <div class="gallery1-container">
-                  <img
-                    alt="image"
-                    src="public/_cdd72f3d-4cda-48a8-8eaf-26e3e3f4807c-1400w.jpg"
-                    class="gallery1-image"
-                  />
+    </nav>
+	
+    <main>
+        <div class="container">
+            <div class="middle"> 
+                <form action="" class="create-post">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg">
+                    </div>
+                    <input type="text" placeholder="Ce coresti sa postezi azi, Maria?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-1.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Maria Alexandara</h3>
+                                    <small>Vrancea, acum 15 minute</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-1.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-2.jpg"></span>
+                            <span><img src="./images/profile-3.jpg"></span>
+                            <span><img src="./images/profile-4.jpg"></span>
+                            <p>Apreciat de 323 de persoane!</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Maria Alexandra</b> Cel mai frumos cadou !
+                            <span class="harsh-tag">#Craciun</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            Vezi 31 comentarii:
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-2.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Sebastian Alex</h3>
+                                    <small>Constanta, acum 2 ore</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-3.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-3.jpg"></span>
+                            <span><img src="./images/profile-4.jpg"></span>
+                            <span><img src="./images/profile-5.jpg"></span>
+                            <p>Apreciat de 179 de persoane!</p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Sebastian Alex</b> Ghiciti ce cant?
+                            <span class="harsh-tag">#guess</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            Vezi 2 comentarii:
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-4.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Andrei Emilian</h3>
+                                    <small>Mandresti, acum 50 de minute</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-4.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-2.jpg"></span>
+                            <span><img src="./images/profile-3.jpg"></span>
+                            <span><img src="./images/profile-1.jpg"></span>
+                            <p>Apreciat de 78 de persoane!</p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Andrei Emilian</b> pe malu lacului de la mandresti
+                            <span class="harsh-tag">#lac</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            Vezi 10 comentarii:
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-3.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Iuliana Stefan</h3>
+                                    <small>Bucuresti, acum o ora</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-5.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-5.jpg"></span>
+                            <span><img src="./images/profile-1.jpg"></span>
+                            <span><img src="./images/profile-2.jpg"></span>
+                            <p>Apreciat de 98 de persoane!</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Iuliana Stefan</b> Aseara la Sala Palatului a fost nebunie
+                            <span class="harsh-tag">#Opera</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            Vezi 17 comentarii:
+                        </div>
+                    </div> 
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-5.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Ioana Andreea</h3>
+                                    <small>Vaslui, acum 5 ore</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-2.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-1.jpg"></span>
+                            <span><img src="./images/profile-2.jpg"></span>
+                            <span><img src="./images/profile-3.jpg"></span>
+                            <p>Apreciat de 243 de persoane!</p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Ioana Andreea</b> Astept recomandari de muzica rock!
+                            <span class="harsh-tag">#rockandroll</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            Vezi 5 comentarii:
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery1-container1">
-                  <img
-                    alt="image"
-                    src="public/_8aa54052-0f75-4343-8e6c-e3d4e588bb73-1400w.jpg"
-                    class="gallery1-image1"
-                  />
-                </div>
-                <div class="gallery1-container2">
-                  <div class="gallery1-image3 thq-img-ratio-4-3">
-                    <img
-                      alt="image"
-                      src="public/_59c11dc9-ea3f-48b0-a7ec-3c05272e6406-1400w.jpg"
-                      class="gallery1-image2"
-                    />
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
+    </main>
+        </div>
     </div>
-  </body>
+    <script src="./index.js"></script>
+</body>
 </html>
