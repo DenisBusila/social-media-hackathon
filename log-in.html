@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign in</title>
+    <meta property="og:title" content="Sign in" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Noto Sans;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background-color: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+	  .sign-in1-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.sign-in1-max-width {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.sign-in1-form-root {
+  gap: var(--dl-space-space-unit);
+  width: 600px;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  max-width: 600px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--dl-radius-radius-radius4);
+  justify-content: center;
+}
+.sign-in1-form {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.sign-in1-title-root {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sign-in1-have-an-account-login {
+  gap: var(--dl-space-space-halfunit);
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  align-items: flex-start;
+}
+.sign-in1-form1 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.sign-in1-email {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.sign-in1-textinput {
+  width: 100%;
+  background-color: transparent;
+}
+.sign-in1-password {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sign-in1-container1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sign-in1-hide-password {
+  gap: var(--dl-space-space-halfunit);
+  width: auto;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  justify-content: center;
+}
+.sign-in1-textinput1 {
+  width: 100%;
+  border-color: var(--dl-color-theme-primary1);
+  background-color: transparent;
+}
+.sign-in1-container2 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.sign-in1-container3 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.sign-in1-terms-agree {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  align-items: flex-start;
+}
+.sign-in1-container4 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.sign-in1-divider {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.sign-in1-divider1 {
+  flex: 1;
+  width: var(--dl-size-size-medium);
+  height: 1px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-theme-primary1);
+}
+.sign-in1-divider2 {
+  flex: 1;
+  width: var(--dl-size-size-medium);
+  height: 1px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-theme-primary1);
+}
+.sign-in1-button {
+  width: 100%;
+  align-self: center;
+}
+.sign-in1-text8 {
+  text-align: center;
+}
+@media(max-width: 991px) {
+  .sign-in1-form-root {
+    width: 100%;
+    padding: var(--dl-space-space-fourunits);
+  }
+}
+@media(max-width: 479px) {
+  .sign-in1-form-root {
+    padding: var(--dl-space-space-oneandhalfunits);
+  }
+  .sign-in1-button {
+    width: 100%;
+  }
+}
+
+.log-in-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <div class="log-in-container">
+        <div class="sign-in1-container thq-section-padding">
+          <div class="sign-in1-max-width thq-section-max-width">
+            <div class="sign-in1-form-root">
+              <div class="sign-in1-form">
+                <div class="sign-in1-title-root">
+                  <h2 class="thq-heading-2">
+                    <span>Bine ati revenit pe RitmoSphere!</span>
+                  </h2>
+                  <div class="sign-in1-have-an-account-login"></div>
+                </div>
+                <form class="sign-in1-form1">
+                  <div class="sign-in1-email">
+                    <label for="thq-sign-in-1-email" class="thq-body-large">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="thq-sign-in-1-email"
+                      required="true"
+                      placeholder="Email"
+                      class="sign-in1-textinput thq-body-large thq-input"
+                    />
+                  </div>
+                  <div class="sign-in1-password">
+                    <div class="sign-in1-container1">
+                      <label
+                        for="thq-sign-in-1-password"
+                        class="thq-body-large"
+                      >
+                        Password
+                      </label>
+                      <div class="sign-in1-hide-password"></div>
+                    </div>
+                    <input
+                      type="password"
+                      id="thq-sign-in-1-password"
+                      required="true"
+                      placeholder="Parola"
+                      class="sign-in1-textinput1 thq-body-large thq-input"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="sign-in1-container4">
+              <div class="sign-in1-divider">
+                <div class="sign-in1-divider1"></div>
+                <div class="sign-in1-divider2"></div>
+              </div>
+              <button type="button" class="sign-in1-button thq-button-outline">
+                <span class="sign-in1-text8 thq-body-small">
+                  <span>Log in</span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
